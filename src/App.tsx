@@ -1,16 +1,15 @@
 import React from 'react';
 import './App.css';
+import NewsList from './components/newsList/NewsList';
+import Header from './layouts/Header';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <h1>
-          Reign Technical Test
-        </h1>
-      </header>
-    </div>
-  );
+    <main>
+        <Header />
+        <NewsList />
+    </main>
+);
 }
 
 export default App;

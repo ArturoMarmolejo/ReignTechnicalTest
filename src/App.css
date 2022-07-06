@@ -1,16 +1,57 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+
+:root {
+  /* background */
+  --header-bg-color: linear-gradient(to bottom, #ececec 20%, #fff 124%);
+  --main-bg-color: hsl(0, 0%, 99%);
+  --card-main-bg-color: #fcfcfc;
+  --card-side-bg-color: #ffffff;
+  --heart-icon-bg-color: #dd0031;
+  --item-main-selected-background-color: #1890ff;
+
+  /* text */
+  --header-text-color: #3b3b3b;
+  --main-text-color: #606060;
+  --logo-text-color: #3b3b3b;
+  --select-text-color: #343434;
+  --card-main-text-color-enabled: #6b6b6b;
+  --card-time-text-color: #767676;
+
+  /* misc */
+  --item-main-selected-color: #1797ff;
+
+}
+
+.wrapper {
+  max-width: 1400px;
+  margin: auto;
+}
+
+@media screen and (max-width: 1450px) { 
+  .wrapper {
+    max-width: 1200px
+  }
+}
+
+@media screen and (max-width: 1250px) {
+  .wrapper {
+    max-width: 80%;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .wrapper {
+    max-width: 95%;
+  }
+}
+
+#foo {
+  color: var(--main-color);
 }
 
 
