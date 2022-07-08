@@ -1,0 +1,27 @@
+.tab-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.tab-filter {
+  
+  width: 98px;
+  height: 31px;
+  margin-bottom: 10px;
+  border: solid 1px var(--select-text-color);
+  font-weight: bold;
+  border-radius: 2px;
+  background-color: var(--card-main-bg-color);
+}
+
+.tab-filter-active {
+  border: solid 1px var(--item-main-selected-color);
+  color: var(--item-main-selected-color);
+  width: 98px;
+  height: 31px;
+  margin-bottom: 10px;
+  font-weight: bold;
+  border-radius: 2px;
+  background-color: var(--card-main-bg-color);
+}

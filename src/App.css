@@ -13,17 +13,19 @@
   --card-side-bg-color: #ffffff;
   --heart-icon-bg-color: #dd0031;
   --item-main-selected-background-color: #1890ff;
+  
 
   /* text */
   --header-text-color: #3b3b3b;
   --main-text-color: #606060;
-  --logo-text-color: #3b3b3b;
+  --logo-text-color: #852b2b;
   --select-text-color: #343434;
   --card-main-text-color-enabled: #6b6b6b;
   --card-time-text-color: #767676;
 
   /* misc */
   --item-main-selected-color: #1797ff;
+  --selector-news-border-color: #2e2e2e;
 
 }
 

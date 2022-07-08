@@ -2,7 +2,7 @@ import "./NewsList.css";
 
 export default function NewsList() {
   return (
-    <section className="news-container wrapper">
+    <section className="news-container">
       {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10].map((item, index) => (
         <div className="new-card" key={index}>
           <div className="new-content">
