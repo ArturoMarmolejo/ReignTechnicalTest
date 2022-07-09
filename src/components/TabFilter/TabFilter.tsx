@@ -1,23 +1,26 @@
-import { useEffect, useState } from "react";
+import { Dispatch, SetStateAction, useEffect, useState } from "react";
 import "./TabFilter.css";
 
-export default function TabFilter() {
+interface ITabFilterProps {
+  currentTab: boolean;
+  setCurrentTab: Dispatch<SetStateAction<boolean>>;
+}
 
-  const [active, setActive] = useState(false)
+const TabFilter: React.FC<ITabFilterProps> = ({currentTab, setCurrentTab}) => {
+
+  
 
   const isActive = ():Boolean => {
-    setActive(!active)
-    console.log('active',active)
-    return active;
+    setCurrentTab(!currentTab)
+    return currentTab;
   } 
 
-  useEffect(()=>{
-    isActive()
-  },[])
   return (
     <section className="tab-container">
-      <button className={`tab-filter${active ? "-active" : ""}`} onClick={isActive}>All</button>
-      <button className={`tab-filter${!active ? "-active" : ""}`} onClick={isActive}>My Faves</button>
+      <button className={`tab-filter${currentTab ? "-active" : ""}`} onClick={isActive}>All</button>
+      <button className={`tab-filter${!currentTab ? "-active" : ""}`} onClick={isActive}>My Faves</button>
     </section>
   );
 }
+
+export default TabFilter;

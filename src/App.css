@@ -22,10 +22,13 @@
   --select-text-color: #343434;
   --card-main-text-color-enabled: #6b6b6b;
   --card-time-text-color: #767676;
+  --pagination-text-color-inactive: rgba(0, 0, 0, 0.65);
+  --pagination-text-color-active: #fff;
 
   /* misc */
   --item-main-selected-color: #1797ff;
   --selector-news-border-color: #2e2e2e;
+  --border-pagination-button: #d9d9d9;
 
 }
 

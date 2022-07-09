@@ -17,6 +17,11 @@
   color: var(--main-text-color);
 }
 
+.new-card h3 a {
+  text-decoration: none;
+  color: var(--main-text-color);
+}
+
 .new-content {
   display: flex;
   padding: 20px;

@@ -1,0 +1,31 @@
+.pag-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+  gap: 12px;
+}
+
+.button-pagination {
+  width: 32px;
+  height: 32px;
+  margin-bottom: 10px;
+  padding: 6px 12px 4px;
+  border: solid 1px var(--border-pagination-button);
+  border-radius: 6px;
+  background-color: var(--card-main-bg-color);
+  color: var(--pagination-text-color-inactive);
+  text-align: center;
+}
+.active-button-pagination {
+  
+  border: solid 1px var(--border-pagination-button);
+  color: var(--item-main-selected-color);
+  width: 32px;
+  height: 32px;
+  margin-bottom: 10px;
+  padding: 6px 12px 4px;
+  border-radius: 6px;
+  background-color: var(--item-main-selected-background-color);
+  color: var(--pagination-text-color-active);
+  text-align: center;
+}
